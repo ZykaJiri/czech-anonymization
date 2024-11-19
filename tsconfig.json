@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "esModuleInterop": true, // This can help with common module imports
+    "target": "ESNext",
+    "lib": ["ES7", "DOM"],
+    "strict": true
+  }
+}
