@@ -7,7 +7,7 @@ Anonymizes any Czech text by removing names, social security numbers, phone numb
     docker compose up -d
 
 ## Usage
-    curl -X POST http://192.168.100.153:3000/anonymize -H "Content-Type: application/json" -d '{"text": "Hello John Doe, your email is john@example.com. Jméno: Jan Novák, další email: zyka@testemail.cz"}' | jq
+    curl -X POST http://localhost:3000/anonymize -H "Content-Type: application/json" -d '{"text": "Hello John Doe, your email is john@example.com. Jméno: Jan Novák, další email: zyka@testemail.cz"}' | jq
 
 ## Example output
     {
