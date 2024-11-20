@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  czech-anonymization:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    networks:
+      - shared-network
+
+  nametag3:
+    build:
+      context: https://github.com/ZykaJiri/nametag3-docker.git
+    ports:
+      - "8001:8001"
+    networks:
+      - shared-network
+
+networks:
+  shared-network:
+    driver: bridge

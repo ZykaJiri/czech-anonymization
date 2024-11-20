@@ -11,7 +11,7 @@ interface TagCounters {
 }
 
 export class Nametag3Detector extends AbstractDetector {
-    private baseUrl = "http://localhost:8001/recognize";
+    private baseUrl = "http://nametag3:8001/recognize";
     private tagCounters: TagCounters = {};
 
     private typesToTags: TypesToTags = {

@@ -16,9 +16,8 @@
   "description": "Anonymizes any Czech text by removing names, social security numbers, phone numbers, emails and other.",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node app.ts",
-    "dev": "nodemon --exec ts-node app.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "start": "node dist/app.js"
   },
   "keywords": [],
   "author": "",

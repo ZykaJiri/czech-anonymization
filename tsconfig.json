@@ -1,9 +1,12 @@
 {
   "compilerOptions": {
-    "moduleResolution": "node",
-    "esModuleInterop": true, // This can help with common module imports
-    "target": "ESNext",
-    "lib": ["ES7", "DOM"],
-    "strict": true
-  }
+    "module": "CommonJS",
+    "target": "ES6",
+    "outDir": "./dist",  // Ensure this matches where you're trying to run the script from
+    "rootDir": "./",     // Ensure this matches the structure of your TS files
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
 }
