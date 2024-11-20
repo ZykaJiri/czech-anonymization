@@ -1,6 +1,8 @@
 # czech-anonymization
 Anonymizes any Czech text by removing names, social security numbers, phone numbers, emails and other.
 
+Everything runs locally. Behind the scenes it uses the nametag3 NER: https://github.com/ufal/nametag3
+
 ## Running this
     git clone
     cd czech-anonymization
