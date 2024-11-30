@@ -17,6 +17,7 @@ export abstract class AbstractDetector {
     protected readonly ADDRESS_TAG_NAME = '<ADDRESS_#%index%>';
     protected readonly PERSONAL_ID_TAG_NAME = '<PERSONAL_ID_#%index%>';
     protected readonly PERSON_TITLE_TAG_NAME = '<PERSON_TITLE_#%index%>';
+    protected readonly COMPANY_TAG_NAME = '<COMPANY_#%index%>';
     abstract anonymize(data: string): Promise<AnonymizedResult>;
 
     protected getFullTagName(tagName: string, lastIndex: number): string {

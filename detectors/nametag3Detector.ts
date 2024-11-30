@@ -21,6 +21,7 @@ export class Nametag3Detector extends AbstractDetector {
         "at": this.PHONE_TAG_NAME,
         "me": this.EMAIL_TAG_NAME,
         "gu": this.PERSON_TITLE_TAG_NAME,
+        "if": this.COMPANY_TAG_NAME,
     };
 
     public async anonymize(data: string): Promise<AnonymizedResult> {
