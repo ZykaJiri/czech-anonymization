@@ -3,9 +3,8 @@ services:
     logging:
       driver: "json-file"
       options:
-        max-size: "10m"
+        max-size: "1m"
         max-file: "3"
-        max-time: "5m"
     build:
       context: .
       dockerfile: Dockerfile
@@ -19,9 +18,8 @@ services:
     logging:
       driver: "json-file"
       options:
-        max-size: "10m"
+        max-size: "1m"
         max-file: "3"
-        max-time: "5m"
     build:
       context: https://github.com/ZykaJiri/nametag3-docker.git
     ports:
