@@ -4,7 +4,7 @@ Anonymizes any Czech text by removing names, social security numbers, phone numb
 Everything runs locally. Behind the scenes it uses the nametag3 NER: https://github.com/ufal/nametag3
 
 ## Running this
-    git clone
+    git clone https://github.com/ZykaJiri/czech-anonymization.git
     cd czech-anonymization
     docker compose up -d
 
